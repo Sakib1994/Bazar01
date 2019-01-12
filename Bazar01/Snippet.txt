@@ -1,0 +1,3 @@
+﻿migrationBuilder.Sql("INSERT INTO Sellers(Name, Email, Balance) VALUES('Sumon', 'Sumon@gmail.com', 0.0)");
+            migrationBuilder.Sql("INSERT INTO Sellers(Name, Email, Balance) VALUES('Rakib', 'Rakib@gmail.com', 0.0)");
+            migrationBuilder.Sql("INSERT INTO Sellers(Name, Email, Balance) VALUES('Bulbul', 'Bulbul@gmail.com', 0.0)");

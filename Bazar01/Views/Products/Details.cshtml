@@ -1,0 +1,75 @@
+﻿@model Bazar01.Models.Product
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div class="row">
+    <div class="col-xs-7">
+        <h4>Product</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.Title)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Title)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.Price)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Price)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.Description)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Description)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.Unit)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Unit)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.ItemInStock)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.ItemInStock)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.PlaceId)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.PlaceId)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.CategoryId)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.CategoryId)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.Seller)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Seller.Email)
+            </dd>
+        </dl>
+    </div>
+    <div class="col-xs-5">
+        <div class="pull-right">
+            <img src="@Html.DisplayFor(model => model.ImagePath)" style="max-height: 250px" class="img-responsive" alt="@Html.DisplayNameFor(model => model.ImagePath)" class="img-responsive" />
+        </div>
+    </div>
+</div>
+
+
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

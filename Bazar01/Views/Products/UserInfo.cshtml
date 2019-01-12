@@ -1,0 +1,27 @@
+﻿@model Bazar01.ViewModels.UserViewModel
+@{
+    ViewData["Title"] = "UserInfo";
+}
+
+<h2>UserInfo</h2>
+<div class="row">
+    <div class="col-xs-6">
+        <label class="label label-primary">
+            @Html.DisplayNameFor(model => model.UserName) :
+        </label>
+        <p>
+            @Html.DisplayFor(model => model.UserName)
+        </p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-xs-6">
+        <label class="label label-primary">
+            @Html.DisplayNameFor(model => model.Email) :
+        </label>
+        <p>
+            @Html.DisplayFor(model => model.Email)
+        </p>
+    </div>
+</div>
